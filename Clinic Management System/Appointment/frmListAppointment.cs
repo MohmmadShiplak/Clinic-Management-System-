@@ -50,15 +50,16 @@ namespace Clinic_Management_system
 
 
             frmAddUpdateAppointment frm1 = new frmAddUpdateAppointment(AppointmentID);
-            frm1.ShowDialog();
             frmListAppointment_Load(null, null);
+            frm1.ShowDialog();
+       
      
 
         }
 
-        private void deleteAppointmentToolStripMenuItem_Click(object sender, EventArgs e)
-        {
 
+        private void deleteAppointmentToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
             int AppointmentID = (int)dgvAppointments.CurrentRow.Cells[0].Value;
 
 
@@ -67,7 +68,7 @@ namespace Clinic_Management_system
 
                 MessageBox.Show("Appointment Deleted Sucessfully :-)", "Sucess"
                     , MessageBoxButtons.OK, MessageBoxIcon.Information);
-                 frmListAppointment_Load(null, null);
+                frmListAppointment_Load(null, null);
             }
             else
             {
@@ -77,17 +78,6 @@ namespace Clinic_Management_system
 
 
             }
-
-        }
-
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-
-
-         frmAddUpdateAppointment frm1 = new frmAddUpdateAppointment();
-         frm1.ShowDialog();
-         frmListAppointment_Load(null, null);
-
 
         }
     }

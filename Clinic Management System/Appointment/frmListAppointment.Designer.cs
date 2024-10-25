@@ -33,9 +33,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ContextMenuStrip1 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
-            this.updateAppointmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteAppointmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dgvAppointments = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.deleteAppointmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2ContextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAppointments)).BeginInit();
             this.SuspendLayout();
@@ -55,13 +54,12 @@
             this.btnAdd.Size = new System.Drawing.Size(137, 66);
             this.btnAdd.TabIndex = 214;
             this.btnAdd.Text = "Add";
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+        
             // 
             // guna2ContextMenuStrip1
             // 
             this.guna2ContextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.guna2ContextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.updateAppointmentToolStripMenuItem,
             this.deleteAppointmentToolStripMenuItem});
             this.guna2ContextMenuStrip1.Name = "guna2ContextMenuStrip1";
             this.guna2ContextMenuStrip1.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
@@ -73,21 +71,7 @@
             this.guna2ContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.guna2ContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(220, 52);
-            // 
-            // updateAppointmentToolStripMenuItem
-            // 
-            this.updateAppointmentToolStripMenuItem.Name = "updateAppointmentToolStripMenuItem";
-            this.updateAppointmentToolStripMenuItem.Size = new System.Drawing.Size(219, 24);
-            this.updateAppointmentToolStripMenuItem.Text = "Update Appointment";
-            this.updateAppointmentToolStripMenuItem.Click += new System.EventHandler(this.updateAppointmentToolStripMenuItem_Click);
-            // 
-            // deleteAppointmentToolStripMenuItem
-            // 
-            this.deleteAppointmentToolStripMenuItem.Name = "deleteAppointmentToolStripMenuItem";
-            this.deleteAppointmentToolStripMenuItem.Size = new System.Drawing.Size(219, 24);
-            this.deleteAppointmentToolStripMenuItem.Text = "Delete Appointment";
-            this.deleteAppointmentToolStripMenuItem.Click += new System.EventHandler(this.deleteAppointmentToolStripMenuItem_Click);
+            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(219, 56);
             // 
             // dgvAppointments
             // 
@@ -147,6 +131,13 @@
             this.dgvAppointments.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(119)))), ((int)(((byte)(133)))), ((int)(((byte)(147)))));
             this.dgvAppointments.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             // 
+            // deleteAppointmentToolStripMenuItem
+            // 
+            this.deleteAppointmentToolStripMenuItem.Name = "deleteAppointmentToolStripMenuItem";
+            this.deleteAppointmentToolStripMenuItem.Size = new System.Drawing.Size(218, 24);
+            this.deleteAppointmentToolStripMenuItem.Text = "Delete Appointment ";
+            this.deleteAppointmentToolStripMenuItem.Click += new System.EventHandler(this.deleteAppointmentToolStripMenuItem_Click_1);
+            // 
             // frmListAppointment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -170,8 +161,7 @@
 
         private Guna.UI2.WinForms.Guna2Button btnAdd;
         private Guna.UI2.WinForms.Guna2ContextMenuStrip guna2ContextMenuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem updateAppointmentToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem deleteAppointmentToolStripMenuItem;
         private Guna.UI2.WinForms.Guna2DataGridView dgvAppointments;
+        private System.Windows.Forms.ToolStripMenuItem deleteAppointmentToolStripMenuItem;
     }
 }

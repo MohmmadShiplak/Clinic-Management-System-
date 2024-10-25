@@ -55,8 +55,8 @@ namespace Clinic_Project_Business
                 }
                 clsGlobal.CurrentUser = User;
                 this.Hide();
-                //frmMain frm1 = new frmMain(this);
-                //frm1.ShowDialog();
+                frmMain frm1 = new frmMain(this);
+                frm1.ShowDialog();
 
 
 

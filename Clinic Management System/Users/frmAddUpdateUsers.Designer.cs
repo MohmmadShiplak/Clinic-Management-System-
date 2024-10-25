@@ -30,6 +30,7 @@
         {
             this.guna2TabControl1 = new Guna.UI2.WinForms.Guna2TabControl();
             this.tpPersons = new System.Windows.Forms.TabPage();
+            this.ctrlPersonCardWithFilter1 = new Clinic_Management_system.ctrlPersonCardWithFilter();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.gbPermissions = new Guna.UI2.WinForms.Guna2GroupBox();
@@ -49,7 +50,6 @@
             this.txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnClose = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnSave = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.ctrlPersonCardWithFilter1 = new Clinic_Management_system.ctrlPersonCardWithFilter();
             this.guna2TabControl1.SuspendLayout();
             this.tpPersons.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -96,6 +96,15 @@
             this.tpPersons.TabIndex = 0;
             this.tpPersons.Text = "Person Information ";
             this.tpPersons.UseVisualStyleBackColor = true;
+            // 
+            // ctrlPersonCardWithFilter1
+            // 
+            this.ctrlPersonCardWithFilter1.BackColor = System.Drawing.Color.White;
+            this.ctrlPersonCardWithFilter1.FilterEnabled = true;
+            this.ctrlPersonCardWithFilter1.Location = new System.Drawing.Point(-4, -6);
+            this.ctrlPersonCardWithFilter1.Name = "ctrlPersonCardWithFilter1";
+            this.ctrlPersonCardWithFilter1.Size = new System.Drawing.Size(1225, 595);
+            this.ctrlPersonCardWithFilter1.TabIndex = 0;
             // 
             // tabPage1
             // 
@@ -404,7 +413,7 @@
             this.btnClose.ForeColor = System.Drawing.Color.White;
             this.btnClose.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnClose.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnClose.Location = new System.Drawing.Point(848, 656);
+            this.btnClose.Location = new System.Drawing.Point(881, 633);
             this.btnClose.Name = "btnClose";
             this.btnClose.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
             this.btnClose.Size = new System.Drawing.Size(155, 45);
@@ -427,7 +436,7 @@
             this.btnSave.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnSave.ImageOffset = new System.Drawing.Point(0, -1);
             this.btnSave.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnSave.Location = new System.Drawing.Point(1014, 656);
+            this.btnSave.Location = new System.Drawing.Point(1069, 633);
             this.btnSave.Name = "btnSave";
             this.btnSave.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
             this.btnSave.Size = new System.Drawing.Size(155, 45);
@@ -435,21 +444,12 @@
             this.btnSave.Text = "Save";
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // ctrlPersonCardWithFilter1
-            // 
-            this.ctrlPersonCardWithFilter1.BackColor = System.Drawing.Color.White;
-            this.ctrlPersonCardWithFilter1.FilterEnabled = true;
-            this.ctrlPersonCardWithFilter1.Location = new System.Drawing.Point(-4, -6);
-            this.ctrlPersonCardWithFilter1.Name = "ctrlPersonCardWithFilter1";
-            this.ctrlPersonCardWithFilter1.Size = new System.Drawing.Size(1225, 595);
-            this.ctrlPersonCardWithFilter1.TabIndex = 0;
-            // 
             // frmAddUpdateUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1225, 725);
+            this.ClientSize = new System.Drawing.Size(1225, 680);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.guna2TabControl1);

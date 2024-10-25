@@ -1,4 +1,4 @@
-﻿using Clinic_Management_system;
+﻿using Clinic_Management_System_Business;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -65,19 +65,17 @@ namespace Clinic_Management_system
                 _Appointment = new clsAppointments();
 
 
-                //tpDoctor.Enabled = false;
+                tpDoctor.Enabled = false;
 
                 
                 return;
             }
             else
             {
-               // tpPatient.Enabled = false;
-               //tpDoctor.Enabled = false;
+                tpPatient.Enabled = false;
+               tpDoctor.Enabled = false;
 
-            ctrlDoctorCardWithFilter2.Enabled = false;
-                ctrlPatientCardWithFilter1.Enabled = false; 
-
+         
 
             }
 
@@ -166,124 +164,6 @@ namespace Clinic_Management_system
             }
         }
 
-        private void ctrlPatientCardWithFilter1_OnePatientSelected(object sender, ctrlPatientCardWithFilter.clsPatientSelectedEventArgs e)
-        {
-            if (!e.PatientID.HasValue)
-            {
-              //  btnSave.Enabled = false;
-
-                return;
-
-            }
-
-
-            if (_Mode == enMode.AddNew && ctrlPatientCardWithFilter1.SelectedPatinetInfo.IsAppointment())
-            {
-
-                MessageBox.Show(" this Patient Already has an Appointment Please Choose Onther One "
-                    , "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-             //   btnSave.Enabled = false;
-
-                tpPatient.Enabled = false;
-
-                tpAppointments.Enabled = false;
-
-
-
-                return;
-            }
-
-
-            _SelectedApponitment = e.PatientID;
-
-            tpPatient.Enabled = true;
-
-
-
-            lblAppointmentID.Enabled = true;
-
-           // btnSave.Enabled = true;
-
-        }
-
-        private void ctrlPatientCardWithFilter1_OnePatientSelected_1(object sender, ctrlPatientCardWithFilter.clsPatientSelectedEventArgs e)
-        {
-            if (!e.PatientID.HasValue)
-            {
-                //  btnSave.Enabled = false;
-
-                return;
-
-            }
-
-
-            if (_Mode == enMode.AddNew && ctrlPatientCardWithFilter1.SelectedPatinetInfo.IsAppointment())
-            {
-
-                MessageBox.Show(" this Patient Already has an Appointment Please Choose Onther One "
-                    , "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-                //   btnSave.Enabled = false;
-
-                tpPatient.Enabled = false;
-
-                tpAppointments.Enabled = false;
-
-
-
-                return;
-            }
-
-
-            _SelectedApponitment = e.PatientID;
-
-            tpPatient.Enabled = true;
-
-
-
-            lblAppointmentID.Enabled = true;
-
-            // btnSave.Enabled = true;
-        }
-
-        private void ctrlPatientCardWithFilter1_OnePatientSelected_2(object sender, ctrlPatientCardWithFilter.clsPatientSelectedEventArgs e)
-        {
-            if (!e.PatientID.HasValue)
-            {
-                //  btnSave.Enabled = false;
-
-                return;
-
-            }
-
-
-            if (_Mode == enMode.AddNew && ctrlPatientCardWithFilter1.SelectedPatinetInfo.IsAppointment())
-            {
-
-                MessageBox.Show(" this Patient Already has an Appointment Please Choose Onther One "
-                    , "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-                //   btnSave.Enabled = false;
-
-                tpPatient.Enabled = false;
-
-                tpAppointments.Enabled = false;
-
-
-
-                return;
-            }
-
-
-            _SelectedApponitment = e.PatientID;
-
-            tpPatient.Enabled = true;
-
-
-
-            lblAppointmentID.Enabled = true;
-        }
 
         private void ctrlPatientCardWithFilter1_OnePatientSelected_3(object sender, ctrlPatientCardWithFilter.clsPatientSelectedEventArgs e)
         {
@@ -302,12 +182,7 @@ namespace Clinic_Management_system
                 MessageBox.Show(" this Patient Already has an Appointment Please Choose Onther One "
                     , "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-                //   btnSave.Enabled = false;
-
-                tpPatient.Enabled = false;
-
-                tpAppointments.Enabled = false;
-
+           
 
 
                 return;
@@ -318,9 +193,10 @@ namespace Clinic_Management_system
 
             tpPatient.Enabled = true;
 
+            tpDoctor.Enabled = true;
 
 
-            lblAppointmentID.Enabled = true;
+       
         }
     }
 }

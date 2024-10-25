@@ -15,12 +15,12 @@ namespace Clinic_Project_Business
 {
     public partial class frmMain : Form
     {
-       // frmLogin frmLogin;  
+        frmLogin frmLogin;  
 
-        public frmMain()
+        public frmMain(frmLogin frm)
         {
             InitializeComponent();
-           // this.frmLogin = frmLogin;   
+            this.frmLogin = frm;   
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)
