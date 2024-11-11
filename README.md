@@ -1,5 +1,7 @@
 # Clinic Management System 
 
+## comprehensive desktop application developed to manage patients, doctors, appointments, medical records, prescriptions, and payments."
+
 ## key Features 
 
 ## Dashboard 
