@@ -14,7 +14,7 @@
 
 ## Manage Patients
 
-### Display personal information for each patient, along with their condition (Sick Name) and date of diagnosis.
+#### Display personal information for each patient, along with their condition (Sick Name) and date of diagnosis.
 
 ####  Include specific notes for each condition.
 
@@ -24,7 +24,7 @@
 
 #### Allow booking an appointment, including status and appointment time.
 
-### Ensure it is not possible to book the same appointment for the same patient more than once.
+#### Ensure it is not possible to book the same appointment for the same patient more than once.
 
 ## Manage prescriptions 
 
@@ -45,7 +45,7 @@
 
 ## Settings 
 
-###  Display the working days and holidays for the clinic, along with clinic opening and closing hours.
+####  Display the working days and holidays for the clinic, along with clinic opening and closing hours.
 
 
 ## Teachnologies 
