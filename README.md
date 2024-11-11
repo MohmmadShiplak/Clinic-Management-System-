@@ -10,13 +10,13 @@
 
 ####  Display personal information for each doctor, along with their experience and specializations.
 
-### Nanage Patients
+## Manage Patients
 
 ### Display personal information for each patient, along with their condition (Sick Name) and date of diagnosis.
 
 ####  Include specific notes for each condition.
 
-##  Appointments 
+## Manage  Appointments 
 
 #### Show personal information for every patient, including their condition (Sick Name) and the doctor assigned to the patient, along with the doctor's specialty
 
@@ -24,14 +24,14 @@
 
 ### Ensure it is not possible to book the same appointment for the same patient more than once.
 
-##  prescriptions 
+## Manage prescriptions 
 
 #### dispaly information for patient who desire to take a Prescription 
 
 #### alongside guidleines from a doctor such as start date , end date , instructions 
 #### medication name , freqeuancy , dosage 
 
-### medical records 
+## Manage MedicalRecords 
 
 #### display personal information for each patient 
 #### including thier  medical Details  such as Diagonsis , Visit description , notes 
