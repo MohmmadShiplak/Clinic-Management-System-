@@ -80,5 +80,14 @@ namespace Clinic_Management_system
             }
 
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+
+            Form  frm1=new frmAddUpdateAppointment();
+            frmListAppointment_Load(null, null);
+            frm1.ShowDialog();
+
+        }
     }
 }

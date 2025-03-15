@@ -163,8 +163,8 @@ namespace Clinic_Management_System_Data_Access
             }
             catch (Exception ex)
             {
-                //   clsDataAccessHelper.HandleException(ex);
-                Console.WriteLine("Error :" + ex.Message);
+                   clsDataAccessHelper.HandleException(ex);
+              //  Console.WriteLine("Error :" + ex.Message);
 
             }
             return NewPersonID;
@@ -206,9 +206,9 @@ namespace Clinic_Management_System_Data_Access
             }
             catch (Exception ex)
             {
-                //clsDataAccessHelper.HandleException(ex);
+                clsDataAccessHelper.HandleException(ex);
 
-                Console.WriteLine("Error :" + ex.Message);
+              //  Console.WriteLine("Error :" + ex.Message);
             }
             return RowAffected > 0;
         }

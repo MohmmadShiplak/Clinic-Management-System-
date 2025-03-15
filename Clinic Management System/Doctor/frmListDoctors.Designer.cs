@@ -34,7 +34,6 @@
             this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ContextMenuStrip1 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
             this.showPatientsInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.updatePatientsInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dgvDoctors = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2ContextMenuStrip1.SuspendLayout();
@@ -64,7 +63,6 @@
             this.guna2ContextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.guna2ContextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.showPatientsInfoToolStripMenuItem,
-            this.updatePatientsInfoToolStripMenuItem,
             this.deleToolStripMenuItem});
             this.guna2ContextMenuStrip1.Name = "guna2ContextMenuStrip1";
             this.guna2ContextMenuStrip1.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
@@ -76,7 +74,7 @@
             this.guna2ContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.guna2ContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(205, 76);
+            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(205, 52);
             // 
             // showPatientsInfoToolStripMenuItem
             // 
@@ -84,13 +82,6 @@
             this.showPatientsInfoToolStripMenuItem.Size = new System.Drawing.Size(204, 24);
             this.showPatientsInfoToolStripMenuItem.Text = "Show Doctors  Info";
             this.showPatientsInfoToolStripMenuItem.Click += new System.EventHandler(this.showPatientsInfoToolStripMenuItem_Click);
-            // 
-            // updatePatientsInfoToolStripMenuItem
-            // 
-            this.updatePatientsInfoToolStripMenuItem.Name = "updatePatientsInfoToolStripMenuItem";
-            this.updatePatientsInfoToolStripMenuItem.Size = new System.Drawing.Size(204, 24);
-            this.updatePatientsInfoToolStripMenuItem.Text = "Update Doctors";
-            this.updatePatientsInfoToolStripMenuItem.Click += new System.EventHandler(this.updatePatientsInfoToolStripMenuItem_Click);
             // 
             // deleToolStripMenuItem
             // 
@@ -180,7 +171,6 @@
         private Guna.UI2.WinForms.Guna2Button btnAdd;
         private Guna.UI2.WinForms.Guna2ContextMenuStrip guna2ContextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem showPatientsInfoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem updatePatientsInfoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deleToolStripMenuItem;
         private Guna.UI2.WinForms.Guna2DataGridView dgvDoctors;
     }
